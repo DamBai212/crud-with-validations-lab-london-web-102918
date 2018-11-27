@@ -1,0 +1,7 @@
+<h1>Index</h1>
+
+<tbody>
+<% @songs.each do |song| %>
+<tr> <%= link_to song.title %> - <%= song.artist_name %> (<%= song.release_year %>)</tr><br>
+<% end %>
+<tbody>
